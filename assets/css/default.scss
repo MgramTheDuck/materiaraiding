@@ -1,0 +1,145 @@
+$color_1: #959396;
+$color_2: white;
+$background-color_1: #302d36;
+
+/* Guide Page Title Styles */
+/* Site nav and scrollbar customizations */
+/* Buff and Pot Timing Windows */
+/* Inline Buff Icons */
+/* Custom Embeds */
+.guide_subtitle {
+	text-transform: uppercase;
+	font-weight: 500;
+	color: $color_1;
+}
+.guide_titleimg {
+	display: inline;
+	height: 1em;
+	vertical-align: bottom;
+	margin-right: 7px;
+	margin-bottom: 3px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+.guide_title {
+	font-weight: 400;
+}
+.label-mur {
+	width: fit-content;
+	padding: 1px 6px 1px 6px;
+	border-radius: 6px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+	background: rgb(143, 49, 207);
+	background: linear-gradient(45deg, rgba(143, 49, 207, 1) 0%, rgba(228, 29, 253, 1) 50%, rgba(252, 69, 214, 1) 100%);
+	color: $color_2;
+	font-weight: 500;
+	font-size: small;
+}
+.label-pf {
+	width: fit-content;
+	padding: 1px 6px 1px 6px;
+	border-radius: 6px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+	background: rgb(207, 49, 49);
+	background: linear-gradient(45deg, rgba(207, 49, 49, 1) 0%, rgba(253, 96, 29, 1) 50%, rgba(252, 188, 69, 1) 100%);
+	color: $color_2;
+	font-weight: 500;
+	font-size: small;
+}
+.site-nav {
+	scrollbar-width: thin;
+	scrollbar-color: transparent transparent;
+	&:hover {
+		scrollbar-color: #959396 transparent;
+	}
+}
+.search-results {
+	scrollbar-width: thin;
+	scrollbar-color: transparent transparent;
+	&:hover {
+		scrollbar-color: #959396 transparent;
+	}
+}
+.highlight {
+	scrollbar-width: thin;
+	scrollbar-color: transparent transparent;
+	&:hover {
+		scrollbar-color: #959396 transparent;
+	}
+}
+html {
+	scrollbar-color: #959396 transparent;
+}
+#timingwindow {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	flex-wrap: wrap;
+	align-items: start;
+	margin-top: 1.5em;
+}
+#potwindowwrap {
+	border: 0px solid #aaa;
+	border-radius: 6px;
+	max-width: 463px;
+	background: linear-gradient(135deg, #fffdfd, #f77d7d);
+	padding: 0.13em;
+	flex-grow: 1;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+#burstwindowwrap {
+	border: 0px solid #aaa;
+	border-radius: 6px;
+	max-width: 463px;
+	background: linear-gradient(135deg, #fffdfd, #7dcaf7);
+	padding: 0.13em;
+	flex-grow: 1;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+#window {
+	border: 0px solid #aaa;
+	border-radius: 4px;
+	background-color: $background-color_1;
+	padding: 0.5em 0.5em 0.5em 0.7em;
+}
+#windowheader {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+#windowtitle {
+	display: inline-block;
+	font-size: 1.3em;
+	margin-top: 0em;
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.statusicon {
+	vertical-align: text-top;
+	max-height: 1.4em;
+	padding: 0px;
+	width: auto;
+}
+.imageembedbox {
+	cursor: pointer;
+	margin-bottom: 1em;
+}
+.imageembed {
+	border-radius: 6px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+	outline: 2px solid rgba(255, 255, 255, 0);
+	outline-offset: -2px;
+	transition: 0.1s;
+	&:hover {
+		outline: 2px solid white;
+		transition: 0.1s;
+	}
+}
+figcaption {
+	text-align: center;
+	font-size: small;
+	color: $color_1;
+}
